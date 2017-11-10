@@ -1,0 +1,164 @@
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+nav.top-bar {
+text-align:center;
+}
+section.top-bar-section {
+display: inline-block;
+margin-left: -132px;
+}
+
+ #progress_bar {
+    margin: 10px 0;
+    padding: 2px;
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+	text-align:center;
+	color: #fff;
+	border-radius: 5px;
+  }
+  #progress_bar.loading {
+    opacity: 1.0;
+  }
+  #progress_bar .percent {
+    background-color: #22527b;
+    height: auto;
+    width: 0;
+	color: #fff;
+	border-radius: 5px;
+  }
+
+  rect.frame {
+    fill: #ffffff;
+    fill-opacity: .1;
+    stroke: #aaa;
+  }
+
+
+
+  circleData {
+    stroke: #000;
+    stroke-width: 2;
+  }
+
+  circleControl{
+      stroke: #fff;
+        stroke-width: 0.3;
+  }
+
+  circle.Selected{
+  	  stroke: #b30000;
+  	  stroke-width: 2;
+
+  }
+
+
+label {
+color:#000822;
+}
+
+
+
+  div.otherGraph {
+    position: absolute;
+    text-align: center;
+    padding: 2px;
+    font: 12px sans-serif;
+    border: 2px;
+    background:#fff;
+    border: 1px solid #E5E5E5;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius:50%;
+    border-bottom-left-radius:50%;
+    pointer-events: none;
+  }
+
+  .brush .extent {
+  	stroke: #008CBA;
+  	stroke-width: 2;
+  	fill:#000;
+  	fill-opacity: .01;
+  	shape-rendering: crispEdges;
+  }
+
+  .point.selected {
+  	fill:  #000;
+  	stroke:  #000;
+  	stroke-width: 1;
+  }
+
+   .brushextent {
+        stroke: #000;
+        stroke-width: 1.5px;
+        fill: #000;
+        fill-opacity: 0.3;
+      }
+
+    .no_selected{
+    	  fill: #181a24;
+    }
+    div.tooltip {
+      position: absolute;
+      text-align: center;
+      padding: 2px;
+      font: 12px sans-serif;
+      border: 1px;
+      background:#fff;
+      border-radius: 5px;
+      pointer-events: none;
+    }
+
+
+.percentage{
+		position: relative;
+	    width: 30px;
+		margin-left: 5px;
+		border: solid 1px #1f253d;
+		font-size: 12px;
+		border-radius: 5px;
+		background: #50597b;
+		text-align:center;
+		color: #fff;
+
+}
+
+.oddrowcolor{
+	background-color:#112a3f;
+	opacity: 0.85;
+}
+.evenrowcolor{
+	background-color:#22527b;
+	opacity: 0.5;
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.line2 {
+  fill: none;
+  stroke: red;
+  stroke-width: 1.5px;
+}
