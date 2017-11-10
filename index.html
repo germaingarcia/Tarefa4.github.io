@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarefa4_10427398</title>
+	<link href="https://cloud.typography.com/737368/747986/css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="keen_static.css"/>
+    <link type="text/css" rel="stylesheet" href="keen_dashboards.css"/>
+    <link type="text/css" rel="stylesheet" href="syle_Aux.css"/>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="polybrush.js"></script>
+     <script src="palette.js"></script>
+    <script src="Utils.js"></script>
+     <script src="numeric.js"></script>
+      <script src="SVD.js"></script>
+     
+
+
+    <style type="text/css">
+    .axis line,
+		.axis path {
+			fill: none;
+			stroke: #000;
+			shape-rendering: crispEdges;
+			stroke-width: 2px;
+		}
+
+		.link path {
+			fill: none;
+			/*stroke: steelblue;*/
+		}
+
+		#gis {width: 100%;height:100%;}
+    rect.extent {
+        fill: #000;
+        fill-opacity: .125;
+        stroke: #fff;
+      }
+
+		      rect.frame {
+		        fill: #ffffff;
+		        fill-opacity: .1;
+		        stroke: #aaa;
+		      }
+		      circle {
+		  /*fill: #ccc;*/
+		      fill-opacity: .65;
+		      stroke-width: 1;
+		}
+		  circle.Selected{
+		  	  stroke: #b30000;
+		  	  stroke-width: 2;
+
+		  }
+		  div.tooltip {
+		  position: absolute;
+		  text-align: center;
+		  padding: 2px;
+		  font: 12px sans-serif;
+		  border: 1px;
+		  background:#fff;
+		  border-radius: 5px;
+		  pointer-events: none;
+		}
+
+    }
+
+	</style>
+
+</head>
+<body>
+<div class="row">
+
+<div class="col-sm-12 chart-wrapper" style="height:200px;" >
+			
+			<div class="col-sm-9 ">
+				<div class="row">
+				  
+
+
+				 <div class=" col-sm-4 chart-wrapper">
+					    <div class="chart-title">
+					      Star Coordinates
+					    </div>
+
+						    <div class="col-sm-12 chart-wrapper" id="StarCor">
+
+						    </div>
+					    
+
+					    <div class="chart-notes">
+					      Interaction, drag of DA points and select
+					    </div>
+					   </div>
+
+					   <div class=" col-sm-4 chart-wrapper">
+					    <div class="chart-title">
+					      Radviz
+					    </div>
+
+						    <div class="col-sm-12 chart-wrapper" id="RadVizDiv">
+
+						    </div>
+
+
+					    <div class="chart-notes">
+					      Radviz, selection of points
+					    </div>
+					  </div>
+
+
+				  <div class="  col-sm-4 chart-wrapper">
+				    <div class="chart-title">
+				      Principal Component Analysis
+				    </div>
+				    <div class="chart-stage" id="MyMainDiv" ">
+				      <!-- <div id="grid-1-1" style="height: 150px;">
+				      
+				        
+				      </div> -->
+				    </div>
+				    <div class="chart-notes">
+				      PCA projection
+				    </div>
+				  </div>
+
+				  
+					  
+				  
+				  
+				  
+					 
+
+				</div>
+				 <hr/>
+				<div class="row">
+					<div class="  col-sm-12 chart-wrapper" >
+						<div class="chart-title">
+				      Parallel Coorinates
+				    </div>
+				    <div class="chart-stage" id="MyParalellDiv">
+				      <!-- <div id="grid-1-1" style="height: 150px;">
+				      
+				        
+				      </div> -->
+				    </div>
+				    <div class="chart-notes">
+				      Representation based on materials
+				    </div>
+					</div>
+				</div>
+		</div>
+		
+
+			<div class="col-sm-3 chart-wrapper" >
+				  <div class="chart-wrapper">
+				    <div class="chart-title">
+				       <button class="btn btn-success" onclick="ChargeDetailTable()">Select and Click</button> 
+				    </div>
+				    
+
+					        <div><center><a >Table Detail</a> </center></div>
+					        <hr/>
+					        <div id="divatable" class="" style="overflow-x: scroll; overflow-y: scroll; padding:4px; height: 700px">
+
+					          <table id="tableDetail" class="table table-striped" style="overflow-x: scroll; overflow-y: scroll;  padding:4px; height: 700px">
+					            <thead>
+					            <tr>
+					             
+
+					            </tr>
+					            </thead>
+					            <tbody>
+
+					            </tbody>
+					          </table>
+					        </div>
+				  </div>
+			</div>
+
+
+ </div>  
+ <br>       
+<script src="index.js"></script>
+
+</body>
+</html>>
